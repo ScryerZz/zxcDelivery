@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PI/2FWyQLHw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcAPI\\zxcAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\coderzxc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "C:\\Users\\coderzxc\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

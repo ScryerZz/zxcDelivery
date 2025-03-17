@@ -1,0 +1,6 @@
+@zxcAPI_HostAddress = http://localhost:5015
+
+GET {{zxcAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

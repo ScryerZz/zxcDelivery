@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zxcAPI", "zxcAPI\zxcAPI.csproj", "{A46450F2-B694-4C3A-820C-2712918624CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zxcBLAZOR", "zxcBLAZOR\zxcBLAZOR.csproj", "{662DF77D-83B0-4570-9F61-3BF3AA5022FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A46450F2-B694-4C3A-820C-2712918624CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46450F2-B694-4C3A-820C-2712918624CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46450F2-B694-4C3A-820C-2712918624CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46450F2-B694-4C3A-820C-2712918624CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662DF77D-83B0-4570-9F61-3BF3AA5022FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662DF77D-83B0-4570-9F61-3BF3AA5022FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662DF77D-83B0-4570-9F61-3BF3AA5022FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662DF77D-83B0-4570-9F61-3BF3AA5022FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA6124C-1C15-4B4A-AF48-CC4EB24EC9B7}
+	EndGlobalSection
+EndGlobal
