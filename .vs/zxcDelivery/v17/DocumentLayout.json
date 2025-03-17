@@ -1,12 +1,139 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcblazor\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|solutionrelative:zxcblazor\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|solutionrelative:zxcblazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcblazor\\zxcblazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|solutionrelative:zxcblazor\\zxcblazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcblazor\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|solutionrelative:zxcblazor\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcblazor\\pages\\restaurantedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{662DF77D-83B0-4570-9F61-3BF3AA5022FE}|zxcBLAZOR\\zxcBLAZOR.csproj|solutionrelative:zxcblazor\\pages\\restaurantedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46450F2-B694-4C3A-820C-2712918624CE}|zxcAPI\\zxcAPI.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A46450F2-B694-4C3A-820C-2712918624CE}|zxcAPI\\zxcAPI.csproj|solutionrelative:zxcapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A46450F2-B694-4C3A-820C-2712918624CE}|zxcAPI\\zxcAPI.csproj|c:\\users\\coderzxc\\documents\\github\\zxcdelivery\\zxcapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A46450F2-B694-4C3A-820C-2712918624CE}|zxcAPI\\zxcAPI.csproj|solutionrelative:zxcapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "zxcBLAZOR",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
+              "RelativeDocumentMoniker": "zxcBLAZOR\\zxcBLAZOR.csproj",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
+              "RelativeToolTip": "zxcBLAZOR\\zxcBLAZOR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-17T14:27:43.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\App.razor",
+              "RelativeDocumentMoniker": "zxcBLAZOR\\App.razor",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\App.razor",
+              "RelativeToolTip": "zxcBLAZOR\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T13:35:17.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RestaurantEdit.razor",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Pages\\RestaurantEdit.razor",
+              "RelativeDocumentMoniker": "zxcBLAZOR\\Pages\\RestaurantEdit.razor",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Pages\\RestaurantEdit.razor",
+              "RelativeToolTip": "zxcBLAZOR\\Pages\\RestaurantEdit.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T13:32:25.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "zxcBLAZOR\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "zxcBLAZOR\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T13:32:13.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "zxcAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "zxcAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:24:33.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "zxcAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcAPI\\appsettings.json",
+              "RelativeToolTip": "zxcAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T13:21:43.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Program.cs",
+              "RelativeDocumentMoniker": "zxcBLAZOR\\Program.cs",
+              "ToolTip": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\Program.cs",
+              "RelativeToolTip": "zxcBLAZOR\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:18:00.612Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

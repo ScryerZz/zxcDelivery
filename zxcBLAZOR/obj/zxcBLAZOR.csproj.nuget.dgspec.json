@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj": {}
+    "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj": {
+    "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
+        "projectUniqueName": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
         "projectName": "zxcBLAZOR",
-        "projectPath": "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
+        "projectPath": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\zxcBLAZOR.csproj",
         "packagesPath": "C:\\Users\\coderzxc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coderzxc\\source\\repos\\zxcDelivery\\zxcBLAZOR\\obj\\",
+        "outputPath": "C:\\Users\\coderzxc\\Documents\\GitHub\\zxcDelivery\\zxcBLAZOR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,28 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

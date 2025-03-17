@@ -1,0 +1,61 @@
+﻿@page "/restaurants/edit/{Id:int?}"
+@inject zxcBLAZOR.Services.RestaurantService RestaurantService
+@inject NavigationManager NavigationManager
+
+<h3>@(Id.HasValue ? "Редактировать ресторан" : "Создать ресторан")</h3>
+
+@if (restaurant == null)
+{
+    <p>Загрузка...</p>
+}
+else
+{
+    <EditForm Model="restaurant" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div>
+            <label>Название:</label>
+            <InputText @bind-Value="restaurant.Name" />
+        </div>
+        <div>
+            <label>Адрес:</label>
+            <InputText @bind-Value="restaurant.Address" />
+        </div>
+        <button type="submit">Сохранить</button>
+        <button @onclick="GoBack">Отмена</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private zxcBLAZOR.Models.Restaurant restaurant = new zxcBLAZOR.Models.Restaurant();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id.HasValue)
+        {
+            restaurant = await RestaurantService.GetRestaurant(Id.Value);
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        if (Id.HasValue)
+        {
+            await RestaurantService.UpdateRestaurant(restaurant);
+        }
+        else
+        {
+            await RestaurantService.CreateRestaurant(restaurant);
+        }
+        NavigationManager.NavigateTo("/restaurants");
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/restaurants");
+    }
+}

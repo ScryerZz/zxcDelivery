@@ -1,0 +1,9 @@
+﻿<div class="nav-menu">
+    <NavLink href="/" class="nav-link">Главная</NavLink>
+    <NavLink href="/restaurants" class="nav-link">Рестораны</NavLink>
+    <AuthorizeView>
+        <Authorized>
+            <NavLink href="/profile" class="nav-link">Профиль</NavLink>
+        </Authorized>
+    </AuthorizeView>
+</div>

@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+@inject zxcBLAZOR.Services.NotificationService NotificationService
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4">
+            <AuthorizeView>
+                <Authorized>
+                    <span>Привет, @context.User.Identity.Name!</span>
+                    <a href="authentication/logout">Выйти</a>
+                </Authorized>
+                <NotAuthorized>
+                    <a href="authentication/login">Войти</a>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
+
+        <div class="content px-4">
+            @if (!string.IsNullOrEmpty(notification))
+            {
+                <p style="color: green;">Уведомление: @notification</p>
+            }
+            @Body
+        </div>
+    </div>
+</div>
+
+@code {
+    private string notification;
+
+    protected override void OnInitialized()
+    {
+        NotificationService.OnNotificationReceived += (message) =>
+        {
+            notification = message;
+            StateHasChanged();
+        };
+    }
+}

@@ -1,28 +1,67 @@
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.FileProviders;
+using zxcBLAZOR.Services;
 using zxcBLAZOR.Components;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using zxcBLAZOR;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-// Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+// Регистрация корневого компонента
+builder.RootComponents.Add<App>("#app");
 
-var app = builder.Build();
+// Настройка HTTP-клиента для общения с zxcAPI
+builder.Services.AddHttpClient("zxcAPI", client =>
+    client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
+    .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+// Подключение HTTP-клиента как сервиса
+builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("zxcAPI"));
+
+// Поддержка аутентификации через JWT
+builder.Services.AddApiAuthorization();
+
+// Регистрация пользовательских сервисов
+builder.Services.AddScoped<RestaurantService>();
+builder.Services.AddScoped<NotificationService>();
+
+// Проверяем среду до сборки
+if (builder.HostEnvironment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    // В режиме разработки запускаем веб-сервер
+    var webAppBuilder = WebApplication.CreateBuilder(args);
+    webAppBuilder.Services.AddDirectoryBrowser();
+    var webApp = webAppBuilder.Build();
+
+    webApp.UseFileServer(new FileServerOptions
+    {
+        FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")),
+        RequestPath = "",
+        EnableDirectoryBrowsing = false
+    });
+
+    // Запускаем сервер на localhost:5015
+    webApp.Urls.Add("http://localhost:5015");
+    await webApp.StartAsync();
+
+    Console.WriteLine("Blazor WebAssembly запущен на http://localhost:5000");
+    // Открываем браузер автоматически
+    try
+    {
+        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+        {
+            FileName = "http://localhost:5000",
+            UseShellExecute = true
+        });
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Не удалось открыть браузер: {ex.Message}");
+    }
 }
 
-app.UseHttpsRedirection();
-
-
-app.UseAntiforgery();
-
-app.MapStaticAssets();
-app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
-
-app.Run();
+var app = builder.Build();
+await app.RunAsync();

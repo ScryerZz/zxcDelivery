@@ -1,0 +1,33 @@
+﻿@page "/restaurants/{Id:int}"
+@inject zxcBLAZOR.Services.RestaurantService RestaurantService
+@inject NavigationManager NavigationManager
+
+<h3>Детали ресторана</h3>
+
+@if (restaurant == null)
+{
+    <p>Загрузка...</p>
+}
+else
+{
+    <p><strong>Название:</strong> @restaurant.Name</p>
+    <p><strong>Адрес:</strong> @restaurant.Address</p>
+    <button @onclick="GoBack">Назад</button>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private zxcBLAZOR.Models.Restaurant restaurant;
+
+    protected override async Task OnInitializedAsync()
+    {
+        restaurant = await RestaurantService.GetRestaurant(Id);
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/restaurants");
+    }
+}

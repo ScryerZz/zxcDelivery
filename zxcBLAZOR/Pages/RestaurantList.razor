@@ -1,0 +1,102 @@
+﻿@page "/restaurants"
+@inject zxcBLAZOR.Services.RestaurantService RestaurantService
+@inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager
+
+<h3>Список ресторанов</h3>
+
+<input @bind="search" placeholder="Поиск..." @oninput="OnSearchChanged" />
+<button @onclick="SearchRestaurants">Поиск</button>
+
+@if (restaurants == null)
+{
+    <p>Загрузка...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Адрес</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var restaurant in restaurants)
+            {
+                <tr>
+                    <td>@restaurant.Name</td>
+                    <td>@restaurant.Address</td>
+                    <td>
+                        <button @onclick="() => ViewRestaurant(restaurant.Id)">Просмотр</button>
+                        <button @onclick="() => EditRestaurant(restaurant.Id)">Редактировать</button>
+                        <button @onclick="() => DeleteRestaurant(restaurant.Id)">Удалить</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button @onclick="PreviousPage" disabled="@(currentPage <= 1)">Назад</button>
+    <span>Страница @currentPage</span>
+    <button @onclick="NextPage">Вперед</button>
+}
+
+@code {
+    private List<zxcBLAZOR.Models.Restaurant> restaurants;
+    private int currentPage = 1;
+    private int pageSize = 10;
+    private string search = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadRestaurants();
+    }
+
+    private async Task LoadRestaurants()
+    {
+        restaurants = await RestaurantService.GetRestaurants(currentPage, pageSize, search);
+    }
+
+    private async Task SearchRestaurants()
+    {
+        currentPage = 1;
+        await LoadRestaurants();
+    }
+
+    private void OnSearchChanged(ChangeEventArgs e)
+    {
+        search = e.Value.ToString();
+    }
+
+    private async Task NextPage()
+    {
+        currentPage++;
+        await LoadRestaurants();
+    }
+
+    private async Task PreviousPage()
+    {
+        if (currentPage > 1)
+        {
+            currentPage--;
+            await LoadRestaurants();
+        }
+    }
+
+    private void ViewRestaurant(int id)
+    {
+        NavigationManager.NavigateTo($"/restaurants/{id}");
+    }
+
+    private void EditRestaurant(int id)
+    {
+        NavigationManager.NavigateTo($"/restaurants/edit/{id}");
+    }
+
+    private async Task DeleteRestaurant(int id)
+    {
+        await RestaurantService.DeleteRestaurant(id);
+        await LoadRestaurants();
+    }
+}

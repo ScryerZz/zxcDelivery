@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("zxcBLAZOR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c2be161e7bc1a7a68ceaaba793d60ac01f2c1cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("zxcBLAZOR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("zxcBLAZOR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\zxcAPI.props" />
+</Project>

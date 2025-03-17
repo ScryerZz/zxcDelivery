@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "zxcDelivery",
+    "Projects": [
+      {
+        "Path": "zxcAPI\\zxcAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "zxcBLAZOR\\zxcBLAZOR.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      }
+    ]
+  }
+]
